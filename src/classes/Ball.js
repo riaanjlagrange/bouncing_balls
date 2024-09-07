@@ -15,6 +15,14 @@ class Ball {
     ctx.fill();
     ctx.closePath();
   }
+
+  // UPDATE BALL
+  update(ctx) {
+    this.x += this.velocity.x;
+    this.y += this.velocity.y;
+
+    this.draw(ctx);
+  }
 }
 
 export default Ball;
