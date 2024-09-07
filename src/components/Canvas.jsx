@@ -37,7 +37,7 @@ const Canvas = ({ updateCount }) => {
 
     // CREATE BALLS
     const createBalls = () => {
-      const ballAmount = 20;
+      const ballAmount = 10;
       for (let i = 0; i < ballAmount; i++) {
         const radius = randomIntFromRange(15, 30);
         const x = randomIntFromRange(radius, canvas.width - radius);
@@ -60,9 +60,9 @@ const Canvas = ({ updateCount }) => {
 
     // CREATE PARTICLES
     const createParticles = () => {
-      const particleAmount = 500;
+      const particleAmount = 300;
       for (let i = 0; i < particleAmount; i++) {
-        const radius = randomIntFromRange(1, 5);
+        const radius = randomIntFromRange(1, 2);
         const x = randomIntFromRange(radius, canvas.width - radius);
         const y = randomIntFromRange(radius, canvas.height - radius);
         const velocity = {
