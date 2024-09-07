@@ -18,6 +18,11 @@ class Ball {
 
   // UPDATE BALL
   update(ctx) {
+    if (this.velocity.x === 0 && this.velocity.y === 0) {
+      this.velocity.x = 2;
+      this.velocity.y = 5;
+    }
+
     this.x += this.velocity.x;
     this.y += this.velocity.y;
 
