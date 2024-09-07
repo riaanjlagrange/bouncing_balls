@@ -8,7 +8,7 @@ class Ball {
     this.acceleration = acceleration;
     this.trail = [];
     this.maxTrailLength = 30;
-    this.glowBlur = 50;
+    this.glowBlur = 15;
   }
 
   // DRAW BALL
