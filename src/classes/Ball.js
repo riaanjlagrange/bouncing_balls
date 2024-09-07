@@ -7,14 +7,14 @@ class Ball {
     this.velocity = velocity;
     this.acceleration = acceleration;
     this.trail = [];
-    this.maxTrailLength = 50;
-    this.glowBlur = 20;
+    this.maxTrailLength = 30;
+    this.glowBlur = 50;
   }
 
   // DRAW BALL
   draw(ctx) {
     // BALL TRAIL EFFECT
-    this.trail.forEach((position, index) => {
+    this.trail.forEach((position) => {
       ctx.beginPath();
       ctx.arc(
         position.x,
@@ -99,7 +99,6 @@ class Ball {
     this.draw(ctx);
   }
 
-  // RESOLVE COLLISION BETWEEN BALLS
   // RESOLVE COLLISION BETWEEN BALLS
   resolveCollision(otherBall) {
     const xVelocityDiff = this.velocity.x - otherBall.velocity.x;
