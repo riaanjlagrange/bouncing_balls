@@ -1,7 +1,8 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import Ball from "../classes/Ball";
 
 const Canvas = () => {
+  const [animationCount, setAnimationCount] = useState(0);
   const canvasRef = useRef(null);
   let animationFrameIdRef = useRef(null);
   let balls = [];
@@ -36,6 +37,8 @@ const Canvas = () => {
 
     // MAIN ANIMATION LOOP
     const animate = () => {
+      setAnimationCount((prev) => prev + 1);
+      console.log(animationCount);
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       balls.forEach((ball) => ball.update(ctx, canvas));
