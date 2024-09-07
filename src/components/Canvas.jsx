@@ -9,6 +9,7 @@ const Canvas = () => {
   let balls = [];
   let particles = [];
 
+  // BALL COLOR PALETTE
   const colorPalette = ["#A54657", "#582630", "#F7EE7F", "#F1A66A", "#F26157"];
 
   useEffect(() => {
@@ -33,14 +34,14 @@ const Canvas = () => {
 
     // CREATE BALLS
     const createBalls = () => {
-      const ballAmount = 50;
+      const ballAmount = 20;
       for (let i = 0; i < ballAmount; i++) {
         const radius = randomIntFromRange(15, 30);
         const x = randomIntFromRange(radius, canvas.width - radius);
         const y = randomIntFromRange(radius, canvas.height - radius);
         const velocity = {
-          x: randomIntFromRange(-5, 5),
-          y: randomIntFromRange(-5, 5),
+          x: randomIntFromRange(-2, 2),
+          y: randomIntFromRange(-2, 2),
         };
         const acceleration = {
           x: (Math.random() - 0.5) * 0.1,
@@ -79,7 +80,7 @@ const Canvas = () => {
       console.log(animationCount);
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      balls.forEach((ball) => ball.update(ctx, canvas));
+      balls.forEach((ball) => ball.update(ctx, canvas, balls));
       particles.forEach((particle) => particle.update(ctx, canvas));
 
       animationFrameIdRef.current = requestAnimationFrame(animate);
