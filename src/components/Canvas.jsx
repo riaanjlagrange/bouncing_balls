@@ -10,7 +10,7 @@ const Canvas = ({ updateCount }) => {
   let particles = [];
 
   // BALL COLOR PALETTE
-  const colorPalette = ["#A54657", "#582630", "#F7EE7F", "#F1A66A", "#F26157"];
+  const colorPalette = ["#f0d8e6", "	#e482d9", "#8a2744", "#4a1835", "#7182dc"];
 
   const randomIntFromRange = (min, max) => {
     let num = Math.random() * (max - min + 1) + min;
@@ -147,7 +147,7 @@ const Canvas = ({ updateCount }) => {
     <canvas
       ref={canvasRef}
       id="canvas"
-      className="bg-black block absolute"
+      className="bg-[#04233c] block absolute"
     ></canvas>
   );
 };

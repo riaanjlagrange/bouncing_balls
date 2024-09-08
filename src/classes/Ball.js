@@ -8,7 +8,7 @@ class Ball {
     this.acceleration = acceleration;
     this.trail = [];
     this.maxTrailLength = 30;
-    this.glowBlur = 15;
+    this.glowBlur = 30;
   }
 
   // DRAW BALL
@@ -32,7 +32,7 @@ class Ball {
     // GLOWING EFFECT
     ctx.save();
     ctx.beginPath();
-    ctx.arc(this.x, this.y, this.radius + 10, 0, Math.PI * 2, false); // Increase the radius for the glow
+    ctx.arc(this.x, this.y, this.radius + 10, 0, Math.PI * 2, false);
     ctx.fillStyle = this.color;
     ctx.shadowColor = this.color;
     ctx.shadowBlur = this.glowBlur;
