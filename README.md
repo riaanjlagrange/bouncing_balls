@@ -1,19 +1,8 @@
-
 # Bouncing Balls
 
-HTML5 Canvas + React Project. Balls with random radius & color spawn randomly on the screen. The balls move in a random direction and has colision with the canvas frame and with each other. This project is created for my WA22 SF1 Assignment.
+HTML5 Canvas + React Project. Balls with random radius & color spawn randomly on the screen. The balls move in a random direction and has collision with the canvas frame and with each other. This project is created for my WA22 SF1 Assignment. Click to add more balls!
 
-## Tech Stack
-
-**Client:** React, TailwindCSS
-
-
-
-
-## Documentation
-
-[Documentation](https://linktodocumentation)
-
+https://bouncing-balls.riaanjlagrange.com
 
 ## Run Locally
 
@@ -41,12 +30,10 @@ Start the server
   npm run dev
 ```
 
+## Tech Stack
+
+**Client:** React, TailwindCSS
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
+![App Screenshot](./md/md-screenshot-1.jpg)
